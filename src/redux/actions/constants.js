@@ -1,0 +1,4 @@
+export const PUT_DATA = 'PUT_DATA'
+export const LOAD_DATA = 'LOAD_DATA'
+export const SET_CONNECTION_STATE = 'SET_CONNECTION_STATE'
+export const PUT_COMMENTS = 'PUT_COMMENTS'
