@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-d
 
 import Home from './pages/Home'
 import AdminPage from './pages/AdminPage'
+import Header from './components/Header/index'
 
 import PrivateRoute from './components/Routing/PrivateRoute'
 import PublicRoute from './components/Routing/PublicRoute'
@@ -33,6 +34,7 @@ function WaitingComponent(Component) {
 function App() {
   return (
     <Router>
+      <Header />
       <Switch>
         <PublicRoute exact path="/" component={Home} />
         <PublicRoute exact path="/login" component={() => <Redirect exact to="/login/regular" />} />
